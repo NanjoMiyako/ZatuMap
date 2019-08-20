@@ -1,0 +1,52 @@
+div{
+ /* ボックス表示用 */
+ /* border: solid 3px red; */
+ border: none;
+ box-sizing: border-box;
+
+ }
+ 
+.adbox1{
+ width: 950px;
+ height:300px;
+ border-color: black;
+}
+.box3, .box4{
+  float:left;
+  border-color: yellow;
+ }
+ 
+.box5 {
+ clear:both;
+ float:left;
+}
+
+.box6{
+ margin-top: 10px;
+ float:left;
+ border-color: blue;
+}
+
+.box7{
+ margin-top: 10px;
+ float: left;
+ border-color: green;
+}
+
+.box8{
+ width: 950px;
+ height: 500px;
+ border-color: black;
+}
+
+.box9, .box10{
+  float:left;
+  border-color: yellow;
+ }
+ 
+.box11{
+ clear:both;
+ width: 950px;
+ height: 200px;
+ border-color: blue;
+}
