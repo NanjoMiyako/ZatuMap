@@ -89,6 +89,9 @@ function DrawHougaku(houikaku){
 	
 	var ctx = HoukouCanvas.getContext('2d');
 
+	//キャンバスをクリア
+	ctx.clearRect(0,0,200,200);
+
 	//直線描画
 	ctx.lineWidth = 5;
     ctx.strokeStyle = "rgb(255, 0, 0)";
@@ -120,6 +123,7 @@ function DrawVector(pivot_x, pivot_y, radius, theta){
 	var HoukouCanvas = document.getElementById("HoukouCanvas");
 	var ctx = HoukouCanvas.getContext('2d');
 	
+	
 	var delta_x;
 	var delta_y;
 	var end_x;
@@ -133,8 +137,10 @@ function DrawVector(pivot_x, pivot_y, radius, theta){
 		syogen = 2;
 	}else if(theta <= 270){
 		syogen = 3;
-	}else{
+	}else if(theta <= 360){
 		syogen = 4;
+	}else{
+		syogen = 1;
 	}
 	
 	theta = deg2rad(theta);
@@ -144,7 +150,7 @@ function DrawVector(pivot_x, pivot_y, radius, theta){
 	
 	if(syogen == 1){
 		end_x = pivot_x + delta_x;
-		end_y = pivot_y + delta_y;
+		end_y = pivot_y - delta_y;
 	}else if(syogen == 2){
 		end_x = pivot_x - delta_x;
 		end_y = pivot_y - delta_y; 
