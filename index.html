@@ -146,8 +146,10 @@ function DrawVector(pivot_x, pivot_y, radius, theta){
 		syogen = 2;
 	}else if(theta <= 270){
 		syogen = 3;
-	}else{
+	}else if(theta <= 360){
 		syogen = 4;
+	}else{
+		syogen = 1;
 	}
 	
 	theta = deg2rad(theta);
@@ -277,7 +279,7 @@ function distance($lat1, $lon1, $lat2, $lon2, $mode=true)
 }
 </script>
 <a href="https://github.com/NanjoMiyako/ZatuMap/blob/master/ZatuMapIndex.html">link1</a>
-test5<br>
+test6<br>
 
 現在地<br>
 <span style="margin-left:10px">緯度:</span>
