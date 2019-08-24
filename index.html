@@ -11,5 +11,25 @@
 
 <a href="https://github.com/NanjoMiyako/ZatuMap/blob/master/ZatuMapIndex.html">link1</a>
 test2
+
+現在地<br>
+<span style="margin-left:10px">緯度:</span>
+<span style="margin-left:10px"><input type="text" name="CurrentLatitudeTextBox" id="CurrentLatitudeTextBox"></span><br>
+<span style="margin-left:10px">経度:</span>
+<span style="margin-left:10px"><input type="text" name="CurrentLongitudeTextBox" id="CurrentLongitudeTextBox"></span><br>
+
+目的地<br>
+<span style="margin-left:10px">緯度:</span>
+<span style="margin-left:10px"><input type="text" name="DestinationLatitudeTextBox" id="DestinationLatitudeTextBox"></span><br>
+<span style="margin-left:10px">経度:</span>
+<span style="margin-left:10px"><input type="text" name="DestinationLongitudeTextBox" id="DestinationLongitudeTextBox"></span><br>
+<button id="CalcDistAndHougakuBtn" onclick="CalculationDistAndHougaku()">現在地を更新(距離再計算)</button><br>
+
+<span style="margin-left:10px">目的地までの距離:</span>
+<span style="margin-left:10px"><span name="DestinationDistance" id="DestinationDistance"></span></span><br>
+
+方向情報<br>
+<canvas id="HoukouCanvas" width="200" height="200" style="border:1px solid"></canvas>
+
 </body>
 </html>
