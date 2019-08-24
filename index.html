@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+<title>雑マップ</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<script src="jquery-3.3.1.min.js"></script>
+
+
+<div id="InitScriptTag"></div>
+<script type="text/javascript" src="ZatuMapJS.js">
+</script>
+
+現在地<br>
+<span style="margin-left:10px">緯度:</span>
+<span style="margin-left:10px"><input type="text" name="CurrentLatitudeTextBox" id="CurrentLatitudeTextBox"></span><br>
+<span style="margin-left:10px">経度:</span>
+<span style="margin-left:10px"><input type="text" name="CurrentLongitudeTextBox" id="CurrentLongitudeTextBox"></span><br>
+
+目的地<br>
+<span style="margin-left:10px">緯度:</span>
+<span style="margin-left:10px"><input type="text" name="DestinationLatitudeTextBox" id="DestinationLatitudeTextBox"></span><br>
+<span style="margin-left:10px">経度:</span>
+<span style="margin-left:10px"><input type="text" name="DestinationLongitudeTextBox" id="DestinationLongitudeTextBox"></span><br>
+<button id="CalcDistAndHougakuBtn" onclick="CalculationDistAndHougaku()">現在地を更新(距離再計算)</button><br>
+
+<span style="margin-left:10px">目的地までの距離:</span>
+<span style="margin-left:10px"><span name="DestinationDistance" id="DestinationDistance"></span></span><br>
+
+方向情報<br>
+<canvas id="HoukouCanvas" width="200" height="200" style="border:1px solid"></canvas>
+</body>
+</html>
